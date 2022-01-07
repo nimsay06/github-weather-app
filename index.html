@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5d8f573456.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="search-city">
+        <input
+          class="search-bar"
+          type="search"
+          placeholder="Enter city"
+          autofocus="on"
+          autocomplete="off"
+          id="city-input"
+        />
+        <input type="submit" value="🔍" id="search-button" />
+        <button id="location-button">📍 Current Location</button>
+      </form>
+      <div id="currentTime"></div>
+      <div class="currentWeather">
+        <h1 id="city"></h1>
+        <h2 class="temperature">
+          <strong id="current-temperature"></strong>
+          <div class="temperatureConversion">
+            <a href="#" id="celsius-conversionLink">°C</a> /
+            <a href="#" id="fahrenheit-conversionLink"> °F</a>
+          </div>
+        </h2>
+        <div class="weatherIcon">
+          <i class="fas fa-cloud-showers-heavy"></i>
+        </div>
+        <div class="weatherDescription">
+          <div class="humidityDiv">
+            Humidity: <span id="humidityValue"> </span>%
+          </div>
+          <div id="descriptionDiv">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Tomorrow</h3>
+          <i class="fas fa-cloud-showers-heavy weatherIcon"></i>
+          <h2 class="temperature">6°C</h2>
+          <div class="humidityDiv">
+            Humidity: <span id="humidityValue"></span>%
+          </div>
+        </div>
+        <div class="col">
+          <h3>Mon</h3>
+          <i class="fas fa-cloud-sun weatherIcon"></i>
+          <h2 class="temperature">8°C</h2>
+          <div class="humidityDiv">
+            Humidity: <span id="humidityValue"></span>%
+          </div>
+        </div>
+        <div class="col">
+          <h3>Tue</h3>
+          <i class="fas fa-sun weatherIcon"></i>
+          <h2 class="temperature">9°C</h2>
+          <div class="humidityDiv">
+            Humidity: <span id="humidityValue"></span>%
+          </div>
+        </div>
+        <div class="col">
+          <h3>Wed</h3>
+          <i class="fas fa-sun weatherIcon"></i>
+          <h2 class="temperature">11°C</h2>
+          <div class="humidityDiv">
+            Humidity: <span id="humidityValue"></span>%
+          </div>
+        </div>
+        <div class="col">
+          <h3>Thu</h3>
+          <i class="fas fa-cloud-sun weatherIcon"></i>
+          <h2 class="temperature">8°C</h2>
+          <div class="humidityDiv">
+            Humidity: <span id="humidityValue"></span>%
+          </div>
+        </div>
+      </div>
+
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>

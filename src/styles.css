@@ -1,0 +1,92 @@
+body {
+  background-image: #79c0f8;
+}
+.container {
+  border: #42a5f5 solid 5px;
+  border-radius: 15px;
+  background: #d5ebfb;
+  margin: 60px auto 30px auto;
+  padding: 35px 40px 30px 40px;
+  max-width: 900px fit-content;
+  max-height: 800px fit-content;
+}
+
+.search-bar {
+  font-family: "Urbanist", sans-serif;
+  width: 400px;
+  margin: 20px 0px 20px 40px;
+  padding: 10px;
+  border: white solid 2px;
+  border-radius: 20px;
+  background: rgba(223, 239, 252, 0.6);
+}
+#search-button {
+  margin: 0%;
+  background: transparent;
+  border: transparent;
+}
+#location-button {
+  background: rgb(60, 179, 113, 0.3);
+  font: 15px "Urbanist", sans-serif;
+  margin: 0px 0px 0px 10px;
+  padding: 3px 7px 3px 7px;
+  border: white solid 2px;
+  border-radius: 10px;
+}
+#location-button:hover {
+  box-shadow: rgb(77, 150, 179) 0px 5px 10px;
+}
+#currentTime {
+  font: 15px "Urbanist", sans-serif;
+  margin: 0px;
+  float: right;
+}
+.weatherDescription {
+  font: 10px;
+  display: block;
+  text-align: left;
+  margin: 10px 0px 10px 0px;
+  padding: 5px;
+}
+
+.currentWeather {
+  font: 30px "Urbanist", sans-serif;
+  display: block;
+  margin: 80px 0px 20px 0px;
+  text-align: center;
+}
+.temperatureConversion {
+  display: inline;
+  font: 20px "Urbanist", sans-serif;
+}
+
+.weatherIcon {
+  display: block;
+  margin: 10px auto 10px auto;
+  font-size: 35px;
+  opacity: 85%;
+}
+
+.row {
+  display: fixed;
+  columns: 5 250px;
+  font: 15px "Urbanist", sans-serif;
+}
+
+h3 {
+  color: grey;
+}
+.col {
+  text-align: center;
+  border: #79c0f8 solid 2px;
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  height: 200px fit-content;
+  width: 450px fit-content;
+  padding: 5px;
+  margin: 10px;
+  transition: ease-in-out 100ms;
+}
+.col:hover {
+  box-shadow: rgb(77, 150, 179) 0px 5px 20px;
+}
